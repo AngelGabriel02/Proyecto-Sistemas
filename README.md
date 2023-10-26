@@ -9,3 +9,6 @@
 
 # Posibles casos de uso
 - Baja de asistencia
+
+# Recordatorios
+- Cambiar "Usuario" por "Profesor" en el caso de uso CU-001
