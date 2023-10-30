@@ -1,7 +1,6 @@
 # Proyecto-Sistemas
 
 # Casos de uso pendientes:
-- Altas bajas y cambios de grupos
 - Exportar informe
 - Registro de informes por periodo
 - Registro de asistencia en tiempo real
