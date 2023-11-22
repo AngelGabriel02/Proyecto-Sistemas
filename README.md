@@ -1,9 +1,6 @@
-# Proyecto-Sistemas
+# FCA-SA
 
-# Casos de uso pendientes:
-- Exportar informe
-- Registro de informes por periodo
-- Registro de asistencia en tiempo real
-
-# Posibles casos de uso
-- Baja de asistencia
+# Pendientes:
+- Diagramas de secuencia
+- Diagramas de datos
+- Documentación en Doxygen
