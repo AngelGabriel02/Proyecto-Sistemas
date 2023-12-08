@@ -1,6 +1,6 @@
 ![Diagrama_de_Clases](Diagrama_de_Clases.png)
 
-/'
+<!--
 @startuml Diagrama_de_Clases
 
 interface IAdministración {
@@ -58,7 +58,8 @@ IProfesor ..|> Alumno
 Materia --* Alumno
 Alumno --o Asistencia
 Alumno --o Tarjeta
-Profesor --> Materia
+Profesor <-- Materia
 
 @enduml
-'/
+
+-->
