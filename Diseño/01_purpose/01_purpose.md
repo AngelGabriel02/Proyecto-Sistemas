@@ -1,2 +1,2 @@
 # Propósito
-El propósito del sistema FCA-SA
+El propósito fundamental del sistema "FCA-SA" es el de agilizar la toma de asistencias de los profesores de la Facultad de Contaduría y Administración (FCA), así como permitirles generar informes que les den a conocer el estatus de las asistencias e inasistencias de sus alumnos.
