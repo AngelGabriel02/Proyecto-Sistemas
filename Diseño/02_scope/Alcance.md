@@ -1,0 +1,2 @@
+# Alcance
+El aplicativo móvil "FCA-SA" se planea que sea usado por todos los profesores de la Facultad de Contaduría y Administración que cuenten con un dispositivo con sistema operativo Android 8 en adelante. Estos profesores podrán hacer uso de todas las funcionalidades descritas en esta primera versión de la aplicación, y se espera que las futuras versiones puedan implementar y arreglar los puntos descritos en los "Gaps" del sistema.
