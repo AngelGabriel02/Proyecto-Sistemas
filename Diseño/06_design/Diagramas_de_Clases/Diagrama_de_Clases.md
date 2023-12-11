@@ -1,178 +1,207 @@
-![Diagrama_de_Clases](Diagrama_de_Clases.png)
+@startuml DiagramaDeClases
 
-<!--
-@startuml
+interface IAsistencia {
 
-interface iAsistencia {
-
-  + obtenerFecha(): Date
-  + establecerFecha(fecha: Date): void
-  + obtenerHora(): Time
-  + establecerHora(hora: Time): void
-  + obtenerNFCAlumno(): String
-  + establecerNFCAlumno(nfc: String): void
+  + obtenerFechaAsistencia(): Date
+  + establecerFechaAsistencia(fecha: Date): void
+  + obtenerHoraAsistencia(): Time
+  + establecerHoraAsistencia(hora: Time): void
+  + obtenerNfcAlumnoAsistencia(): String
+  + establecerNfcAlumnoAsistencia(nfc: String): void
 
 }
-
-class asistencia {
+class Asistencia {
 
   - fecha: Date
   - hora: Time
-  - NFCAlumno: String
-  + asistencia(fecha: Date, hora: Time, NFCAlumno: String)
+  - nfcAlumno: String
+  + Asistencia(fecha: Date, hora: Time, nfcAlumno: String)
 
 }
 
-iAsistencia <|.. asistencia
+IAsistencia <|.. Asistencia
 
-interface iAlumno {
+interface IAlumno {
 
-  + obtenerNombre(): String
-  + establecerNombre(nombre: String): void
-  + obtenerNumeroDeCuenta(): String
-  + establecerNumeroDeCuenta(numero: String): void
-  + obtenerNFC(): String
-  + establecerNFC(nfc: String): void
+  + obtenerNombreAlumno(): String
+  + establecerNombreAlumno(nombre: String): void
+  + obtenerNumeroDeCuentaAlumno(): String
+  + establecerNumeroDeCuentaAlumno(numero: String): void
+  + obtenerNfcAlumno(): String
+  + establecerNfcAlumno(nfc: String): void
 
 }
 
-class alumno {
+class Alumno {
 
   - nombre: String
   - numeroDeCuenta: String
-  - NFC: String
-  + alumno(nombre: String, numeroDeCuenta: String, NFC: String)
+  - nfc: String
+  + Alumno(nombre: String, numeroDeCuenta: String, nfc: String)
 
 }
 
-iAlumno <|.. alumno
+IAlumno <|.. Alumno
 
-interface iMateria {
+interface IMateria {
 
-  + obtenerAlumnos(): iAlumno[]
-  + agregarAlumno(alumno: iAlumno): void
-  + eliminarAlumno(alumno: iAlumno): void
-  + obtenerAsistencias(): iAsistencia[]
-  + agregarAsistencia(asistencia: iAsistencia): void
-  + eliminarAsistencia(asistencia: iAsistencia): void
-
-}
-
-class materia {
-
-  - alumnos: iAlumno[]
-  - asistencias: iAsistencia[]
-  + materia(alumnos: iAlumno[], asistencias: iAsistencia[])
-
-}
-iMateria <|.. materia
-
-class reporte {
-
-  - asistencias: iAsistencia[]
-  - materia: iMateria
-  + reporte(asistencias: iAsistencia[], materia: iMateria)
-
-}
-interface iModelo {
-
-  + obtenerMateria(): iMateria
-  + establecerMateria(iMateria): void
-  + altaAlumno(alumno): iAlumno
-  + bajaAlumno(alumno): void
-  + cambioAlumno(alumno): iAlumno
-  + altaMateria(materia): iMateria
-  + bajaMateria(materia): void
-  + cambioMateria(materia): iMateria
-  + altaAsistencia(asistencia): iAsistencia
-  + bajaAsistencia(asistencia): void
-  + cambioAsistencia(asistencia): iAsistencia
-  + obtenerNombrePorNFC(NFC: String): String
-  + generarReporte(materia): reporte
+  + obtenerAlumnosMateria(): IAlumno[]
+  + agregarAlumnoMateria(alumno: IAlumno): void
+  + eliminarAlumnoMateria(alumno: IAlumno): void
+  + obtenerAsistenciasMateria(): IAsistencia[]
+  + agregarAsistenciaMateria(asistencia: IAsistencia): void
+  + eliminarAsistenciaMateria(asistencia: IAsistencia): void
 
 }
 
-class modelo {
+class Materia {
 
-  - materia: iMateria
-  + modelo(materia: iMateria)
-
-}
-iModelo <|.. modelo
-
-interface iVista {
-
-  + actualizar(): void
+  - alumnos: IAlumno[]
+  - asistencias: IAsistencia[]
+  + Materia(alumnos: IAlumno[], asistencias: IAsistencia[])
 
 }
 
-class vista {
+IMateria <|.. Materia
 
-  - modelo: iModelo
-  - controlador: iControlador
-  + vista(modelo: iModelo, controlador: iControlador)
+class Reporte {
 
-}
-iVista <|.. vista
-
-interface iControlador {
-
-  + manejarAltaAlumno(): void
-  + manejarBajaAlumno(): void
-  + manejarCambioAlumno(): void
-  + manejarAltaMateria(): void
-  + manejarBajaMateria(): void
-  + manejarCambioMateria(): void
-  + manejarAltaAsistencia(): void
-  + manejarBajaAsistencia(): void
-  + manejarCambioAsistencia(): void
-  + manejarGenerarReporte(): void
+  - asistencias: IAsistencia[]
+  - materia: IMateria
+  + Reporte(asistencias: IAsistencia[], materia: IMateria)
 
 }
 
-class controlador {
+interface IAlumnoModelo {
 
-  - modelo: iModelo
-  - vista: iVista
-  + controlador(modelo: iModelo, vista: iVista)
+  + altaAlumnoModelo(alumno): IAlumno
+  + bajaAlumnoModelo(alumno): void
+  + cambioAlumnoModelo(alumno): IAlumno
 
 }
-iControlador <|.. controlador
 
-class lectorNFC {
+interface IMateriaModelo {
+
+  + obtenerMateriaModelo(): IMateria
+  + establecerMateriaModelo(IMateria): void
+  + altaMateriaModelo(materia): IMateria
+  + bajaMateriaModelo(materia): void
+  + cambioMateriaModelo(materia): IMateria
+
+}
+
+interface IAsistenciaModelo {
+
+  + altaAsistenciaModelo(asistencia): IAsistencia
+  + bajaAsistenciaModelo(asistencia): void
+  + cambioAsistenciaModelo(asistencia): IAsistencia
+  + generarReporteModelo(materia): Reporte
+
+}
+
+class Modelo {
+
+  - materia: IMateria
+  + Modelo(materia: IMateria)
+
+}
+
+IAlumnoModelo <|.. Modelo
+IMateriaModelo <|.. Modelo
+IAsistenciaModelo <|.. Modelo
+
+interface IVista {
+
+  + actualizarVista(): void
+
+}
+
+class Vista {
+
+  - modelo: Modelo
+  - controlador: IControlador
+  + Vista(modelo: Modelo, controlador: IControlador)
+
+}
+
+IVista <|.. Vista
+
+interface IAlumnoControlador {
+
+  + manejarAltaAlumnoControlador(): void
+  + manejarBajaAlumnoControlador(): void
+  + manejarCambioAlumnoControlador(): void
+
+}
+
+interface IMateriaControlador {
+
+  + manejarAltaMateriaControlador(): void
+  + manejarBajaMateriaControlador(): void
+  + manejarCambioMateriaControlador(): void
+
+}
+
+interface IAsistenciaControlador {
+
+  + manejarAltaAsistenciaControlador(): void
+  + manejarBajaAsistenciaControlador(): void
+  + manejarCambioAsistenciaControlador(): void
+  + manejarGenerarReporteControlador(): void
+
+}
+
+class Controlador {
+
+  - modelo: Modelo
+  - vista: IVista
+  + Controlador(modelo: Modelo, vista: IVista)
+
+}
+
+IAlumnoControlador <|.. Controlador
+IMateriaControlador <|.. Controlador
+IAsistenciaControlador <|.. Controlador
+
+class LectorNfc {
 
   + leerTarjeta(): String
 
 }
 
-interface iDataStorage {
+interface IAlumnoDao {
 
-  + readAlumno(): alumno
+  + readAlumno(): Alumno
   + writeAlumno(alumno)
-  + readMateria(): materia
+
+}
+interface IMateriaDao {
+
+  + readMateria(): Materia
   + writeMateria(materia)
-  + readAsistencia(): asistencia
+
+}
+
+interface IAsistenciaDao {
+
+  + readAsistencia(): Asistencia
   + writeAsistencia(asistencia)
 
 }
 
-class dataStorage {
-
-}
-
-iDataStorage <|.. dataStorage
-
-iModelo "1" o-- "1" iControlador
-iControlador "1" o-- "1" iVista
-iVista "1" o-- "1" iModelo
-iModelo "1" *-- "1" iMateria
-iMateria "1" *-- "*" iAlumno
-iMateria "1" *-- "*" iAsistencia
-iControlador "1" o-- "1" iDataStorage
-iControlador "1" o-- "1" lectorNFC
-reporte "1" *-- "1" iMateria
-reporte "1" *-- "*" iAsistencia
+class DataStorage {}
+IAlumnoDao <|.. DataStorage
+IMateriaDao <|.. DataStorage
+IAsistenciaDao <|.. DataStorage
+Modelo "1" o-- "1" Controlador
+IVista "1" o-- "1" Controlador
+IVista "1" o-- "1" Modelo
+Modelo "1" *-- "1" IMateria
+IMateria "1" *-- "*" IAlumno
+IMateria "1" *-- "*" IAsistencia
+Controlador "1" o-- "1" DataStorage
+Controlador "1" o-- "1" LectorNfc
+Reporte "1" *-- "1" IMateria
+Reporte "1" *-- "*" IAsistencia
 
 @enduml
-
--->
