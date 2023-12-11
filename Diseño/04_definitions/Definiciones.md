@@ -10,7 +10,7 @@
 | MVC | Es un patrón de diseño de software para interfaces de usuario, datos y lógica de control, para proporcionar una mejor división del trabajo | [MVC - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web] |
 | NFC | Es una tecnología de comunicación inalámbrica que permite el intercambio de datos entre dispositivos que se encuentran a distancias muy cortas, en base al estándar ISO 14443 | [What Does NFC Do? Exploring the Versatility of Near Field Communication] |
 | PDF | Es un tipo de documento digital compatible con distintos sistemas operativos y que se visualiza de la misma manera en todos ellos | [What is PDF? Adobe Portable Document Format] |
-| Tarjeta MI | Es el medio de pago electrónico sin contacto mediante tecnología NFC y basado en el estándar internacional Calypso, para el transporte público de la Ciudad de México | [Tarjeta de Movilidad Integrada] |
+| Tarjeta MI | Es el medio de pago electrónico sin contacto mediante tecnología NFC y basado en el estándar internacional Calypso, para el transporte público de la Ciudad de México | [Enterate. Lo que debes saber sobre la nueva tarjeta de Movilidad Integrada CDMX] |
 
 [Android Open Source Project]: https://source.android.com/?hl=es-419
 
@@ -22,10 +22,10 @@
 
 [libnfc]: https://www.kali.org/tools/libnfc/
 
-[MVC - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web]: https://calypsonet.org/especificaciones-calypso/?lang=es#:~:text=Calypso%20es%20un%20est%C3%A1ndar%20de,de%20uso%20a%20largo%20plazo
+[MVC - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web]: https://developer.mozilla.org/es/docs/Glossary/MVC
 
 [What Does NFC Do? Exploring the Versatility of Near Field Communication]: https://nfc-forum.org/learn/what-nfc-does
 
 [What is PDF? Adobe Portable Document Format]: https://www.adobe.com/mx/acrobat/about-adobe-pdf.html
 
-[Tarjeta de Movilidad Integrada]: https://es.wikipedia.org/wiki/Tarjeta_de_Movilidad_Integrada
+[Enterate. Lo que debes saber sobre la nueva tarjeta de Movilidad Integrada CDMX]: Universal, R. E. (2019, October 17). Entérate. Lo que debes saber sobre la nueva tarjeta de Movilidad Integrada de CDMX. El Universal. https://www.eluniversal.com.mx/metropoli/edomex/lo-que-debes-saber-sobre-la-nueva-tarjeta-de-movilidad-integrada-de-cdmx/
