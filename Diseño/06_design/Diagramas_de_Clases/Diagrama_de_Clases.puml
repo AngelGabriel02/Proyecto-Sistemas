@@ -167,7 +167,8 @@ IAsistenciaControlador <|.. Controlador
 
 class LectorNfc {
 
-  + leerTarjeta(): String
+  + registrarTarjeta(): String
+  + actualizarTarjeta(): String
 
 }
 
