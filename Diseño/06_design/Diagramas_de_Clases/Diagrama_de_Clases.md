@@ -1,3 +1,7 @@
+![Diagrama_de_Clases](Diagrama_de_Clases.png)
+
+<!--
+
 @startuml DiagramaDeClases
 
 interface IAsistencia {
@@ -205,3 +209,5 @@ Reporte "1" *-- "1" IMateria
 Reporte "1" *-- "*" IAsistencia
 
 @enduml
+
+-->
