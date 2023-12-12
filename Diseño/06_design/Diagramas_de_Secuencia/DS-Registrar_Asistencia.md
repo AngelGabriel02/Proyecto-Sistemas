@@ -1,0 +1,37 @@
+![Diagramas_de_Secuencia](DS-Registrar_Asistencia.png)﻿﻿
+
+/'
+@startuml
+actor Usuario as Profesor
+participant App
+participant "Dispositivo NFC" as NFCDevice
+participant "Data Source" as DataSource
+participant DAO as Dao
+participant BD as BaseDatos
+
+Profesor -> App: Inicia el pase de lista
+activate App
+loop para cada alumno
+    App -> NFCDevice: Lee NFC del primer alumno
+    activate NFCDevice
+    NFCDevice -> App: Devuelve NFC leído
+    deactivate NFCDevice
+    App -> DataSource: Consulta información del NFC leído
+    activate DataSource
+    DataSource -> Dao: Busca datos del alumno en la BD
+    activate Dao
+    Dao -> BaseDatos: Consulta datos del alumno
+    activate BaseDatos
+    BaseDatos --> Dao: Devuelve datos del alumno
+    deactivate BaseDatos
+    Dao --> DataSource: Devuelve datos del alumno
+    deactivate Dao
+    DataSource --> App: Devuelve información del alumno
+    deactivate DataSource
+    App -> Profesor: Muestra información del alumno
+    Profesor -> App: Confirma asistencia del alumno
+end
+App -> Profesor: Finaliza el pase de lista
+deactivate App
+@enduml
+'/
