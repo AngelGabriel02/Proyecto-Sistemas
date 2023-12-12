@@ -49,6 +49,7 @@ IAlumno <|.. Alumno
 
 interface IMateria {
 
+  + obtenerNombreMateria(): String
   + obtenerAlumnosMateria(): IAlumno[]
   + agregarAlumnoMateria(alumno: IAlumno): void
   + eliminarAlumnoMateria(alumno: IAlumno): void
@@ -60,6 +61,7 @@ interface IMateria {
 
 class Materia {
 
+  - nombreDeMateria: String
   - alumnos: IAlumno[]
   - asistencias: IAsistencia[]
   + Materia(alumnos: IAlumno[], asistencias: IAsistencia[])

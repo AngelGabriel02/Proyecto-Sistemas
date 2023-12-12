@@ -7,7 +7,7 @@ state c1 <<choice>>
 Inicializacion -> Espera_De_Información : [El profesor elige la opción "Registrar Asistencia"] 
 
 
-Espera_De_Información -> Validando_Información : [El profesor elige el grupo a registrar asistencia] 
+Espera_De_Información -> Validando_Información : [El profesor elige la materia a registrar asistencia] 
 
 Validando_Información -> Esperando_Tarjeta : [Información valida] 
 
