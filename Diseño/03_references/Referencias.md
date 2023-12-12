@@ -4,6 +4,8 @@
 
 - Cataldi, Z. (2012). TICs en educación: nuevas herramientas y nuevos paradigmas. http://sedici.unlp.edu.ar/handle/10915/18457
 
+- Design patterns: Data access object. (n.d.). https://www.oracle.com/java/technologies/data-access-object.html
+
 - ISO/IEC 14443-1:2018(en), Cards and security devices for personal identification — Contactless proximity objects — Part 1: Physical characteristics. (n.d.). https://www.iso.org/obp/ui/en/#iso:std:iso-iec:14443:-1:ed-4:v1:en
 
 - libnfc | Kali Linux Tools. (n.d.). Kali Linux. https://www.kali.org/tools/libnfc/

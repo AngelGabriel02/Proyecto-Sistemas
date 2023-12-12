@@ -1,27 +1,21 @@
 @startuml DE_002
 
-
+state c <<choice>>
 state c1 <<choice>>
 
+[*] -> Inicializacion
+Inicializacion --> Espera_De_Información : [El profesor elige la opción "Añadir Alumno"]
+Espera_De_Información --> Lectura_de_datos : [Se ingresa los datos del alumno]
+Lectura_de_datos --> Validado_Información : [El profesor confirma los datos ingresados]
 
-[*] -down-> Inicializacion
+Validado_Información --> c
+c --> Espera_De_Información : [La información ingresada no es correcta]
 
-Inicializacion -down-> Espera_De_Información : [El profesor elige la opción "Añadir Alumno"]
-
-Espera_De_Información -down-> Lectura_de_datos : [Se ingresa los datos del alumno]
-
-Lectura_de_datos -down-> Validando_Información : [El profesor confirma los datos ingresados]
-
-Validando_Información -down-> Esperando_Escaneo : [Se solicita la tarjeta de movilidad integrada]
-
-Esperando_Escaneo -> Validando_Tarjeta : [Los alumnos escanean su tarjeta en el celular del profesor]
-
-Validando_Tarjeta -down-> c1
- 
-c1 -down-> Esperando_Escaneo : [La tarjeta no puede ser escaneada]
-
-c1 -down-> Realizado : [El alumno es dado de alta]
-
-Realizado -down-> [*]
+c --> Esperando_Escaneo : [La información ingresada es correcta]
+Esperando_Escaneo --> Validando_Tarjeta : [Los alumnos escanean su tarjeta de Movilidad Integrada en la aplicación FCA-SA]
+Validando_Tarjeta --> c1
+c1 --> Esperando_Escaneo : [La tarjeta no puede ser escaneada]
+c1 --> Realizado : [El alumno es dado de alta]
+Realizado --> [*]
 
 @enduml

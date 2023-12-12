@@ -4,6 +4,7 @@
 |:-:|:-|:-|
 | Android | Es un sistema operativo de código abierto diseñado para dispositivos móviles, dirigido por Google | [Android Open Source Project] |
 | APK | Es una extensión para paquetes para el sistema Operativo Android, usado para distribuir e instalar componentes compatibles en con el sistema | [TICs en educación: nuevas herramientas y nuevos paradigmas] |
+| DAO | Data Access Object es un patrón de diseño que separa la interfaz de cliente de la capa de acceso a datos para aislar la forma en que se realizan las operaciones de persistencia | [Desing Patterns: Data Access Object] | 
 | Especificación Calypso | Es un estándar de peaje seguro que detalla cómo transmitir datos de forma segura entre una tarjeta y un lector | [Especifiaciones Calypso - Calypso Networks Association] |
 | ISO 14443 | Es un protocolo de comunicación de proximidad internacional para tarjetas inteligentes operando a 13.56 MHz | [ISO/IEC 14443-1:2018] |
 | iText | Es una biblioteca de código abierto para crear y manipular archivos PDF en Java y .NET | [iText Suite] |
@@ -15,6 +16,8 @@
 | Tarjeta MI | Es el medio de pago electrónico sin contacto mediante tecnología NFC y basado en el estándar internacional Calypso, para el transporte público de la Ciudad de México | [Enterate. Lo que debes saber sobre la nueva tarjeta de Movilidad Integrada CDMX] |
 
 [Android Open Source Project]: https://source.android.com/?hl=es-419
+
+[Desing Patterns: Data Access Object]: https://www.oracle.com/java/technologies/data-access-object.html
 
 [TICs en educación: nuevas herramientas y nuevos paradigmas]: http://sedici.unlp.edu.ar/handle/10915/18457
 
