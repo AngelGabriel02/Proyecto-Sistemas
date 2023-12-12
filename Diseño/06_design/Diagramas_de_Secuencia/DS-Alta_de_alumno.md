@@ -1,1 +1,0 @@
-![Diagramas_de_Secuencia](DS-Alta_de_alumno.png)
