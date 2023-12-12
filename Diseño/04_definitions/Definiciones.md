@@ -6,7 +6,7 @@
 | APK | Es una extensión para paquetes para el sistema Operativo Android, usado para distribuir e instalar componentes compatibles en con el sistema | [TICs en educación: nuevas herramientas y nuevos paradigmas] |
 | Especificación Calypso | Es un estándar de peaje seguro que detalla cómo transmitir datos de forma segura entre una tarjeta y un lector | [Especifiaciones Calypso - Calypso Networks Association] |
 | ISO 14443 | Es un protocolo de comunicación de proximidad internacional para tarjetas inteligentes operando a 13.56 MHz | [ISO/IEC 14443-1:2018] |
-| LibNFC | Es una biblioteca para la comunicación de dispoitivos a corta distancia mediante tecnología NFC | [libnfc] |
+| LibNFC | Es una biblioteca para la comunicación de dispositivos a corta distancia mediante tecnología NFC | [libnfc] |
 | MVC | Es un patrón de diseño de software para interfaces de usuario, datos y lógica de control, para proporcionar una mejor división del trabajo | [MVC - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web] |
 | NFC | Es una tecnología de comunicación inalámbrica que permite el intercambio de datos entre dispositivos que se encuentran a distancias muy cortas, en base al estándar ISO 14443 | [What Does NFC Do? Exploring the Versatility of Near Field Communication] |
 | PDF | Es un tipo de documento digital compatible con distintos sistemas operativos y que se visualiza de la misma manera en todos ellos | [What is PDF? Adobe Portable Document Format] |
