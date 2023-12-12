@@ -1,31 +1,3 @@
+# Diagrama de Casos de Uso
+
 ![Diagrama_de_Casos_de_Uso](DCU-001_Profesor.png)
-
-@startuml Diagrama de Casos de Uso Profesor
-left to right direction
-
-actor "Profesor" as prf
-
-usecase "Alta Alumno" as CU001
-usecase "Baja Alumno" as CU002
-usecase "Actualizar Alumno" as CU003
-
-usecase "Alta Materia" as CU004
-usecase "Baja Materia" as CU005
-usecase "Actualizar Materia" as CU006
-
-usecase "Registrar tarjeta" as CU007
-usecase "Actualizar tarjeta" as CU008
-
-prf --> CU001
-prf --> CU002
-prf --> CU003
-prf --> CU004
-prf --> CU005
-prf --> CU006
-prf --> CU007
-prf --> CU008
-
-CU001 <--> NFC
-CU003 <--> NFC
-
-@enduml
