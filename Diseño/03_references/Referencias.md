@@ -12,6 +12,10 @@
 
 - MVC - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web | MDN. (2023, November 13). MDN Web Docs. https://developer.mozilla.org/es/docs/Glossary/MVC
 
+- Pdf, I. (2018, October 12). IText Suite | iText PDF. iText PDF. https://itextpdf.com/products/itext-suite
+
+- SQLite Home page. (n.d.). https://www.sqlite.org/index.html
+
 - Universal, R. E. (2019, October 17). Entérate. Lo que debes saber sobre la nueva tarjeta de Movilidad Integrada de CDMX. El Universal. https://www.eluniversal.com.mx/metropoli/edomex/lo-que-debes-saber-sobre-la-nueva-tarjeta-de-movilidad-integrada-de-cdmx/
 
 - What does NFC do? Exploring the versatility of near field communication technology. (n.d.). https://nfc-forum.org/learn/what-nfc-does
