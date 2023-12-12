@@ -1,6 +1,4 @@
-![Diagrama_de_Clases](Diagrama_de_Clases.png)
-
-<!--
+![Diagrama_de_Clases](DiagramadeClases.png)
 
 @startuml Diagrama_de_Clases
 
@@ -212,5 +210,3 @@ Reporte "1" *-- "1" IMateria
 Reporte "1" *-- "*" IAsistencia
 
 @enduml
-
--->
