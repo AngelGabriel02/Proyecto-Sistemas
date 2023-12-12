@@ -74,7 +74,7 @@ class Reporte {
 
 interface IAlumnoModelo {
 
-  + altaAlumnoModelo(alumno): IAlumno
+  + altaAlumnoModelo(alumno): void
   + bajaAlumnoModelo(alumno): void
   + cambioAlumnoModelo(alumno): IAlumno
 
@@ -84,7 +84,7 @@ interface IMateriaModelo {
 
   + obtenerMateriaModelo(): IMateria
   + establecerMateriaModelo(IMateria): void
-  + altaMateriaModelo(materia): IMateria
+  + altaMateriaModelo(materia): void
   + bajaMateriaModelo(materia): void
   + cambioMateriaModelo(materia): IMateria
 
@@ -92,7 +92,7 @@ interface IMateriaModelo {
 
 interface IAsistenciaModelo {
 
-  + altaAsistenciaModelo(asistencia): IAsistencia
+  + altaAsistenciaModelo(asistencia): void
   + bajaAsistenciaModelo(asistencia): void
   + cambioAsistenciaModelo(asistencia): IAsistencia
   + generarReporteModelo(materia): Reporte
