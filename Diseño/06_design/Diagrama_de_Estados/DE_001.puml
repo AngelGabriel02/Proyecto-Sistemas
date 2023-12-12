@@ -1,26 +1,26 @@
-@startuml Diagrama de Estados
+@startuml DE_001
 
 state c1 <<choice>>
 
-[*] -> Inicializacion
+[*] -down-> Inicializacion
 
-Inicializacion -> Espera_De_Información : [El profesor elige la opción "Registrar Asistencia"] 
+Inicializacion -down-> Espera_De_Información : [El profesor elige la opción "Registrar Asistencia"] 
 
 
-Espera_De_Información -> Validando_Información : [El profesor elige la materia a registrar asistencia] 
+Espera_De_Información -down-> Validando_Información : [El profesor elige la materia a registrar asistencia] 
 
-Validando_Información -> Esperando_Tarjeta : [Información valida] 
+Validando_Información -down-> Esperando_Tarjeta : [Información valida] 
 
 Esperando_Tarjeta -> Validando_Tarjeta : [Los alumnos escanean su tarjeta en el la app FCA-SA] 
 
-Validando_Tarjeta -> c1 
+Validando_Tarjeta -down-> c1 
 
 c1 -> Esperando_Tarjeta : [Información no valida (Rechazada)]
 
-c1 -> Actualizando_Asistencias : [Información valida(Aprobada)] 
+c1 -down-> Actualizando_Asistencias : [Información valida(Aprobada)] 
 
-Actualizando_Asistencias -> Realizado : [La asistencia es tomada] 
+Actualizando_Asistencias -down-> Realizado : [La asistencia es tomada] 
 
-Realizado -> [*] 
+Realizado -down-> [*] 
 
 @enduml

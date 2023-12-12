@@ -1,28 +1,27 @@
-@startuml Diagrama de Estados
+@startuml DE_002
 
 
 state c1 <<choice>>
 
 
-[*] -> Inicializacion
+[*] -down-> Inicializacion
 
-Inicializacion -> Espera_De_Información : [El profesor elige la opción "Añadir Alumno"]
+Inicializacion -down-> Espera_De_Información : [El profesor elige la opción "Añadir Alumno"]
 
-Espera_De_Información -> Lectura_de_datos : [Se ingresa los datos del alumno]
+Espera_De_Información -down-> Lectura_de_datos : [Se ingresa los datos del alumno]
 
-Lectura_de_datos -> Validando_Información : [El profesor confirma los datos ingresados]
+Lectura_de_datos -down-> Validando_Información : [El profesor confirma los datos ingresados]
 
-Validando_Información -> Esperando_Escaneo : [Se solicita la tarjeta de movilidad integrada]
-
+Validando_Información -down-> Esperando_Escaneo : [Se solicita la tarjeta de movilidad integrada]
 
 Esperando_Escaneo -> Validando_Tarjeta : [Los alumnos escanean su tarjeta en el celular del profesor]
 
-Validando_Tarjeta -> c1
+Validando_Tarjeta -down-> c1
  
-c1 -> Esperando_Escaneo : [La tarjeta no puede ser escaneada]
+c1 -down-> Esperando_Escaneo : [La tarjeta no puede ser escaneada]
 
-c1 -> Realizado : [El alumno es dado de alta]
+c1 -down-> Realizado : [El alumno es dado de alta]
 
-Realizado -> [*]
+Realizado -down-> [*]
 
 @enduml
