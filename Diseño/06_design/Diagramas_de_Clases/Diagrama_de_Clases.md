@@ -2,7 +2,7 @@
 
 <!--
 
-@startuml DiagramaDeClases
+@startuml Diagrama_de_Clases
 
 interface IAsistencia {
 
